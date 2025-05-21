@@ -1,4 +1,5 @@
 import AppLayout from '@/layout/AppLayout.vue';
+import Persona from '../views/Persona.vue';
 import { createRouter, createWebHistory } from 'vue-router';
 
 const router = createRouter({
@@ -11,7 +12,7 @@ const router = createRouter({
                 {
                     path: '/',
                     name: 'personas',
-                    component: () => import('@/views/Persona.vue')
+                    component: Persona
                 },
                 {
                     path: '/documentos',
